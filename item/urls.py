@@ -8,5 +8,8 @@ app_name = 'item'
 
 urlpatterns = [
     path("<int:pk>/", detail, name = 'detail'),
+    path("<int:pk>/delete/", delete, name = 'delete'),
+    path("new/", NewItem, name = 'new'),
+    path("<int:pk>/edit/", EditItem, name = 'edit'),
     
 ]
