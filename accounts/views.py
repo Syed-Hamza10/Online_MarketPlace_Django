@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from main.forms import *
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -16,3 +17,4 @@ def signup(request):
     return render(request,'accounts/signup.html',{
         'form' : form
     })
+

@@ -16,6 +16,9 @@ class LoginForm(AuthenticationForm):
     }) )
 
 
+class LogoutForm(AuthenticationForm):
+
+    pass
 class SignupForm(UserCreationForm):
     class Meta:
         model = User

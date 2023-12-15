@@ -10,6 +10,7 @@ urlpatterns = [
     path("<int:pk>/", detail, name = 'detail'),
     path("<int:pk>/delete/", delete, name = 'delete'),
     path("new/", NewItem, name = 'new'),
+    path("search/", SearchItem, name = 'search'),
     path("<int:pk>/edit/", EditItem, name = 'edit'),
     
 ]
